@@ -27,6 +27,8 @@ or create derivative works from this software.
 This software is provided "as is", without warranty of any kind.
 Use at your own risk.
 
+This currently only works on the steam version of the game, the english version or international whatever you want to call it.
+
 This is a free, unofficial mod.
 Donations are optional and do not grant access,
 features, or support.
