@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="debug">
+      <UniqueIdentifier>{7cc7b75b-d2f8-4706-ac56-ae57fdf279ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{8772ff54-db7a-48e3-917a-6aefdbde92ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{2da8cdb5-e66d-4a56-9ba0-362dd18be304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks\backend">
+      <UniqueIdentifier>{ffbf7910-6f90-4747-95be-aa0ea4845d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{b974fd33-7590-4ab7-a54e-e875ac2c26e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\ImGui">
+      <UniqueIdentifier>{b50ca257-1a7f-4535-808b-199b721c0bdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\MinHook">
+      <UniqueIdentifier>{c39ca148-7c5c-46e2-a6cf-01305311f2ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{8bd0ceef-e3aa-4c47-a818-447aeeeead6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\MinHook\hde">
+      <UniqueIdentifier>{3921826c-0426-486a-a14b-5621a4152091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChaosMod">
+      <UniqueIdentifier>{bfb36e09-506a-4254-bccf-55c08fda83e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChaosMod\Effects">
+      <UniqueIdentifier>{64f57a56-a0ab-4c50-a529-03cc3fe8f3e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Twitch">
+      <UniqueIdentifier>{03cda01c-8541-488e-90a4-82d25d9adc65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="patterns.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proc-memory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="assert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ansi.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inipp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="patches.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common_types.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kh2-dmenu.hpp">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="function_ptr.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="YS.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="YW.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJENRTY_0.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="TASK_177.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="function_typedefs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AREA.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="fmatrix.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="treasureTable.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryAllocator.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDraw.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="BINARC.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="obj_camera.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="kn_camera.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="P2PServer.hpp">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="hook_directx12.hpp">
+      <Filter>hooks\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx12.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="trampoline.h">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook.h">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.hpp">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde32.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde64.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\pstdint.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\table32.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\table64.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectionMatrix.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="Fonts.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Damage.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dx12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Caption.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit_Group.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="Version.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatEditor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KN.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSelection.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuRects.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pa.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="ChaosMod.hpp">
+      <Filter>ChaosMod</Filter>
+    </ClInclude>
+    <ClInclude Include="ChaosManager.hpp">
+      <Filter>ChaosMod</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectManager.hpp">
+      <Filter>ChaosMod</Filter>
+    </ClInclude>
+    <ClInclude Include="VoteManager.hpp">
+      <Filter>ChaosMod</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectBase.hpp">
+      <Filter>ChaosMod\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="DamagePlayer.hpp">
+      <Filter>ChaosMod\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnEnemy.hpp">
+      <Filter>ChaosMod\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectRegistry.hpp">
+      <Filter>ChaosMod</Filter>
+    </ClInclude>
+    <ClInclude Include="TwitchConfig.hpp">
+      <Filter>Twitch</Filter>
+    </ClInclude>
+    <ClInclude Include="TwitchChat.hpp">
+      <Filter>Twitch</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangePlayerForm.hpp">
+      <Filter>ChaosMod\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="KHSCII.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SAVERAM.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="fog.hpp">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="VM.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeLogger.hpp">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandRegistry.hpp">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="CinematicCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiTextureManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="proc-memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="assert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="patches.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kh2-dmenu.cpp">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="P2PServer.cpp">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="hook_directx12.cpp">
+      <Filter>hooks\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx12.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="trampoline.c">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.c">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.c">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="hde\hde32.c">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="hde\hde64.c">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Fonts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChaosMod.cpp">
+      <Filter>ChaosMod</Filter>
+    </ClCompile>
+    <ClCompile Include="ChaosManager.cpp">
+      <Filter>ChaosMod</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectManager.cpp">
+      <Filter>ChaosMod</Filter>
+    </ClCompile>
+    <ClCompile Include="VoteManager.cpp">
+      <Filter>ChaosMod</Filter>
+    </ClCompile>
+    <ClCompile Include="DamagePlayer.cpp">
+      <Filter>ChaosMod\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnEnemy.cpp">
+      <Filter>ChaosMod\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectRegistry.cpp">
+      <Filter>ChaosMod</Filter>
+    </ClCompile>
+    <ClCompile Include="TwitchConfig.cpp">
+      <Filter>Twitch</Filter>
+    </ClCompile>
+    <ClCompile Include="TwitchChat.cpp">
+      <Filter>Twitch</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangePlayerForm.cpp">
+      <Filter>ChaosMod\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="KHSCII.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeLogger.cpp">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandRegistry.cpp">
+      <Filter>debug</Filter>
+    </ClCompile>
+    <ClCompile Include="CinematicCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiTextureManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

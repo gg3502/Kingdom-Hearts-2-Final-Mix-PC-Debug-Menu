@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a3db8ae2-fcc4-42e8-8775-013cf076ac1f}</ProjectGuid>
+    <RootNamespace>KH2FMModClient</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(ShortProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PROJECT_NAME="KH2FM.ModClient";UNICODE;_UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir);C:\Users\Herei\Desktop\UniversalHookX-main\KH2FM_ModClient\KH2FM_ModClient\directx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PROJECT_NAME="KH2FM.ModClient";UNICODE;_UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir);C:\Users\Herei\Desktop\UniversalHookX-main\KH2FM_ModClient\KH2FM_ModClient\directx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PROJECT_NAME="KH2FM.ModClient";UNICODE;_UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir);C:\Users\Herei\Desktop\UniversalHookX-main\KH2FM_ModClient\KH2FM_ModClient\directx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PROJECT_NAME="KH2FM.ModClient";UNICODE;_UNICODE;_USRDLL;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir);C:\Users\Herei\Desktop\UniversalHookX-main\KH2FM_ModClient\KH2FM_ModClient\directx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ansi.hpp" />
+    <ClInclude Include="AREA.hpp" />
+    <ClInclude Include="assert.hpp" />
+    <ClInclude Include="BINARC.hpp" />
+    <ClInclude Include="buffer.h" />
+    <ClInclude Include="Caption.hpp" />
+    <ClInclude Include="ChangePlayerForm.hpp" />
+    <ClInclude Include="ChaosManager.hpp" />
+    <ClInclude Include="ChaosMod.hpp" />
+    <ClInclude Include="CinematicCamera.h" />
+    <ClInclude Include="CommandRegistry.hpp" />
+    <ClInclude Include="common_types.hpp" />
+    <ClInclude Include="d3dx12.h" />
+    <ClInclude Include="Damage.hpp" />
+    <ClInclude Include="DamagePlayer.hpp" />
+    <ClInclude Include="dllmain.hpp" />
+    <ClInclude Include="EffectBase.hpp" />
+    <ClInclude Include="EffectManager.hpp" />
+    <ClInclude Include="EffectRegistry.hpp" />
+    <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="FileSelection.h" />
+    <ClInclude Include="FloatEditor.hpp" />
+    <ClInclude Include="fmatrix.hpp" />
+    <ClInclude Include="fog.hpp" />
+    <ClInclude Include="Fonts.hpp" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="function_ptr.hpp" />
+    <ClInclude Include="function_typedefs.hpp" />
+    <ClInclude Include="hde\hde32.h" />
+    <ClInclude Include="hde\hde64.h" />
+    <ClInclude Include="hde\pstdint.h" />
+    <ClInclude Include="hde\table32.h" />
+    <ClInclude Include="hde\table64.h" />
+    <ClInclude Include="helper.hpp" />
+    <ClInclude Include="hooks.hpp" />
+    <ClInclude Include="hook_directx12.hpp" />
+    <ClInclude Include="imconfig.h" />
+    <ClInclude Include="imgui.h" />
+    <ClInclude Include="ImguiTextureManager.h" />
+    <ClInclude Include="imgui_impl_dx12.h" />
+    <ClInclude Include="imgui_impl_win32.h" />
+    <ClInclude Include="imgui_internal.h" />
+    <ClInclude Include="imstb_rectpack.h" />
+    <ClInclude Include="imstb_textedit.h" />
+    <ClInclude Include="imstb_truetype.h" />
+    <ClInclude Include="inipp.h" />
+    <ClInclude Include="kh2-dmenu.hpp" />
+    <ClInclude Include="KHSCII.hpp" />
+    <ClInclude Include="KN.hpp" />
+    <ClInclude Include="kn_camera.hpp" />
+    <ClInclude Include="MemoryAllocator.hpp" />
+    <ClInclude Include="MenuRects.hpp" />
+    <ClInclude Include="MessageDraw.hpp" />
+    <ClInclude Include="MinHook.h" />
+    <ClInclude Include="OBJENRTY_0.hpp" />
+    <ClInclude Include="obj_camera.hpp" />
+    <ClInclude Include="P2PServer.hpp" />
+    <ClInclude Include="pa.hpp" />
+    <ClInclude Include="patches.hpp" />
+    <ClInclude Include="patterns.hpp" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PipeLogger.hpp" />
+    <ClInclude Include="proc-memory.hpp" />
+    <ClInclude Include="ProjectionMatrix.hpp" />
+    <ClInclude Include="SAVERAM.hpp" />
+    <ClInclude Include="SpawnEnemy.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TASK_177.hpp" />
+    <ClInclude Include="trampoline.h" />
+    <ClInclude Include="treasureTable.hpp" />
+    <ClInclude Include="TwitchChat.hpp" />
+    <ClInclude Include="TwitchConfig.hpp" />
+    <ClInclude Include="Unit_Group.hpp" />
+    <ClInclude Include="utils.hpp" />
+    <ClInclude Include="Version.hpp" />
+    <ClInclude Include="VM.h" />
+    <ClInclude Include="VoteManager.hpp" />
+    <ClInclude Include="YS.hpp" />
+    <ClInclude Include="YW.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="assert.cpp" />
+    <ClCompile Include="buffer.c" />
+    <ClCompile Include="ChangePlayerForm.cpp" />
+    <ClCompile Include="ChaosManager.cpp" />
+    <ClCompile Include="ChaosMod.cpp" />
+    <ClCompile Include="CinematicCamera.cpp" />
+    <ClCompile Include="CommandRegistry.cpp" />
+    <ClCompile Include="DamagePlayer.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="EffectManager.cpp" />
+    <ClCompile Include="EffectRegistry.cpp" />
+    <ClCompile Include="FloatEditor.cpp" />
+    <ClCompile Include="Fonts.cpp" />
+    <ClCompile Include="hde\hde32.c" />
+    <ClCompile Include="hde\hde64.c" />
+    <ClCompile Include="helper.cpp" />
+    <ClCompile Include="hook.c" />
+    <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="hook_directx12.cpp" />
+    <ClCompile Include="imgui.cpp" />
+    <ClCompile Include="ImguiTextureManager.cpp" />
+    <ClCompile Include="imgui_demo.cpp" />
+    <ClCompile Include="imgui_draw.cpp" />
+    <ClCompile Include="imgui_impl_dx12.cpp" />
+    <ClCompile Include="imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui_tables.cpp" />
+    <ClCompile Include="imgui_widgets.cpp" />
+    <ClCompile Include="kh2-dmenu.cpp" />
+    <ClCompile Include="KHSCII.cpp" />
+    <ClCompile Include="P2PServer.cpp" />
+    <ClCompile Include="patches.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PipeLogger.cpp" />
+    <ClCompile Include="proc-memory.cpp" />
+    <ClCompile Include="SpawnEnemy.cpp" />
+    <ClCompile Include="trampoline.c" />
+    <ClCompile Include="TwitchChat.cpp" />
+    <ClCompile Include="TwitchConfig.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="VoteManager.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
